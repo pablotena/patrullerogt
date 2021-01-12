@@ -1,4 +1,6 @@
-# patrullerogt
+# Patrullero GT
+
+# Librería bluetoothjhr #
 
 La librería bluetoothjhr para el control de Bluetooth en Kotlin se ha obtenido de este repositorio:
 https://github.com/jose-jhr/-bluetoothjhr
