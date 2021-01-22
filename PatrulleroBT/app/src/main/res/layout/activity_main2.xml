@@ -6,8 +6,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Main2Activity">
-    
-    <EditText 
+
+
+    <EditText
             android:layout_width="match_parent" 
             android:layout_height="wrap_content"
             android:id="@+id/editor"/>
@@ -20,8 +21,43 @@
 
     <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/enviar"
             android:id="@+id/consola"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/consola"
+            android:id="@+id/btnAdelante"
+            android:text="^" android:layout_marginTop="23dp" android:layout_alignParentEnd="true"
+            android:layout_marginEnd="124dp" android:textSize="36sp"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/consola"
+            android:id="@+id/btnDerecha"
+            android:text="&gt;" android:layout_marginTop="200dp" android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" android:textSize="36sp"/>
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/consola"
+            android:id="@+id/btnIzquierda"
+            android:text="&lt;"
+            android:layout_marginTop="200dp"
+            android:textSize="36sp" android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/consola"
+            android:id="@+id/btnAtras"
+            android:text="V"
+            android:textSize="36sp"
+            android:layout_marginTop="367dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="130dp"/>
 
 </RelativeLayout>
