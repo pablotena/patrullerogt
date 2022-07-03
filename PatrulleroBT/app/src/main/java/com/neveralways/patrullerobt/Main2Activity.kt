@@ -1,5 +1,6 @@
 package com.neveralways.patrullerobt
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -21,13 +22,9 @@ class Main2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 
         bluetoothJhr = BluetoothJhr(MainActivity::class.java, this)
-
-        enviar.setOnClickListener {
-            var mensaje = editor.text.toString()
-            bluetoothJhr.Tx(mensaje)
-        }
 
         // Para recibir datos habría que hacer una corrutina con bluetoothJhr.Rx()
 
